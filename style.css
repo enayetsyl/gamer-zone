@@ -32,6 +32,9 @@ img {
 .color60 {
   color: rgba(255, 255, 255, 0.6);
 }
+.fs16 {
+  font-size: 1rem;
+}
 .fs18 {
   font-size: 1.125rem;
 }
@@ -182,10 +185,20 @@ img {
   opacity: 1;
 }
 .card:hover .hover-show i {
-  font-size: 24px;
+  font-size: 48px;
   color: #f948b2;
 }
-
+.card:hover .image-holder {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+.card:hover .image-holder {
+  border: 3px solid #f948b2;
+  border-radius: 16px;
+}
 /* play style */
 .play-flex {
   display: flex;
@@ -237,8 +250,8 @@ img {
   color: #ff42a5;
   background-color: #fff;
   border-radius: 50px;
-  padding: 10px 30px;
 }
+
 /* footer style */
 
 footer {
@@ -260,11 +273,10 @@ footer img {
 }
 
 .footer-upper-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 65px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 25px;
+  padding-bottom: 60px;
 }
 .social-icon {
   text-align: center;
@@ -318,7 +330,7 @@ footer img {
     grid-template-rows: auto auto auto;
   }
   .footer-upper-text {
-    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -331,8 +343,8 @@ footer img {
     font-size: 72px;
   }
   .games-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
   }
   .btnp {
     margin: 0;
@@ -346,7 +358,7 @@ footer img {
     flex-direction: column;
   }
   .footer-lower-text {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
   }
 }
