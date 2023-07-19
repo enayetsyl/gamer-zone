@@ -9,10 +9,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Game</title>
+    <link rel="shortcut icon" href="./images/frame.png" type="image/x-icon" />
   </head>
   <body>
     <!-- header starts here -->
@@ -20,13 +32,15 @@
       <nav class="container nav-flex">
         <div class="nav-left">
           <img src="./images/frame.png" alt="" />
-          <h3 class="nav-title fs45 fw700 color0b"><span class="gradient">G</span>amer</h3>
+          <h3 class="nav-title fs45 fw700 color0b">
+            <span class="gradient-g">G</span>amer
+          </h3>
         </div>
         <div class="nav-right">
           <ul>
             <li class="color3c fs18 fw500">About Us</li>
             <li class="color3c fs18 fw500">Developers</li>
-            <li class="color3c fs18 fw500">
+            <li class="color3c box-back fs18 fw500">
               Follow Us On
               <i class="fa-brands fa-youtube" style="color: #f51d05"></i>
               <i class="fa-brands fa-tiktok" style="color: #0c0d0d"></i>
@@ -41,63 +55,120 @@
         <div class="banner-flex">
           <div class="banner-left">
             <h1 class="color0b fs48 fw600">Play Like The</h1>
-            <h1 class="fs96 fw800">G.O.A.T.</h1>
-            <p class="color53 fs20 fw500"><i class="fa-sharp fa-regular fa-circle-play" style="color: #ff0000;"></i> 1-Click instant play</p>
-            <p class="color53 fs20 fw500"><i class="fa-sharp fa-light fa-arrow-down-to-line" style="color: #ef0bd0;"></i> No Download</p>
-            <p class="color53 fs20 fw500"><i class="fa-solid fa-people-group" style="color: #f7f7f8;"></i> 1000s of supported online games</p>
-            <button class="btnp btns">SIGN IN</button><button class="btnb btns">GO ROGUR</button>
+            <h1 class="fs96 goat fw800 gradient-b">G.O.A.T.</h1>
+            <p class="color53 fs20 fw500">
+              <i
+                class="fa-sharp fa-regular fa-circle-play"
+                style="color: #5f1515"
+              ></i>
+              1-Click instant play
+            </p>
+            <p class="color53 fs20 nd fw500">
+              <i class="fa-solid fa-download" style="color: #f702ef"></i> No
+              Download
+            </p>
+            <p class="color53 fs20 fw500">
+              <i class="fa-solid fa-people-group" style="color: ##5f1515"></i>
+              1000s of supported online games
+            </p>
+            <div class="banner-btn">
+              <button class="btnp btns">SIGN IN</button
+              ><button class="btnb btns">GO ROGUR</button>
+            </div>
           </div>
           <div class="banner-image">
             <img src="./images/group 18.png" alt="" />
           </div>
         </div>
       </section>
+
       <!-- online game starts here -->
       <section>
         <div class="container">
           <div class="online-text">
-            <h3 class="color0b fs48 fw700">Online Games <span class="gradient">Funny Videos</span></h3>
-            <p class="color53 fs18 fw400">A Collection of Hilarious Videos to Brighten Your Day</p>
+            <h3 class="color0b fs48 fw700">
+              Online Games <span class="gradient-b">Funny Videos</span>
+            </h3>
+            <p class="color53 fs18 fw400">
+              A Collection of Hilarious Videos to Brighten Your Day
+            </p>
           </div>
           <div class="card-flex">
             <div class="card">
               <img src="./images/rectangle 4.png" alt="" />
-              <p class="color53 fs20 fw500">No Download. No Installs. Play games Instantly on Gamer.</p>
+              <div class="hover-show">
+                <i class="fa-solid fa-play" style="color: #fcfcfd"></i>
+                <p class="fs20 fw600 gradient-g">Watch now</p>
+              </div>
+              <p class="color53 fs18 fw500">
+                No Download. No Installs. Play <br />games Instantly on Gamer.
+              </p>
             </div>
             <div class="card">
               <img src="./images/rectangle 5.png" alt="" />
-              <p class="color53 fs20 fw500">Did you score? #unblockedgames #school</p>
+              <div class="hover-show">
+                <i class="fa-solid fa-play" style="color: #fcfcfd"></i>
+                <p class="fs20 fw600 gradient-g">Watch now</p>
+              </div>
+              <p class="color53 fs18 fw500">
+                Did you score? #unblockedgames <br />#school
+              </p>
             </div>
             <div class="card">
               <img src="./images/rectangle 7.png" alt="" />
-              <p class="color53 fs20 fw500">Breaking game records like OG</p>
+              <div class="hover-show">
+                <i class="fa-solid fa-play" style="color: #fcfcfd"></i>
+                <p class="fs20 fw600 gradient-g">Watch now</p>
+              </div>
+              <p class="color53 fs18 fw500">
+                Breaking game records <br />like OG
+              </p>
             </div>
             <div class="card">
               <img src="./images/rectangle 6.png" alt="" />
-              <p class="color53 fs20 fw500">Busted gaming on school laptop, but you are still lit.</p>
+              <div class="hover-show">
+                <i class="fa-solid fa-play" style="color: #fcfcfd"></i>
+                <p class="fs20 fw600 gradient-g">Watch now</p>
+              </div>
+              <p class="color53 fs18` fw500">
+                Busted gaming on school laptop, <br />but you are still lit.
+              </p>
             </div>
           </div>
         </div>
       </section>
       <!-- play section starts here -->
-      <section>
+      <section class="container">
         <div class="play-flex">
           <div class="play-content">
-            <h3 class="color0b fs48 fw700"><span class="gradient">Play Instantly,</span> No Downloads No Installs.</h3>
+            <h3 class="color0b fs48 fw700">
+              <span class="gradient-g">Play Instantly,<br /></span> No Downloads
+              <br />
+              No Installs.
+            </h3>
             <p class="color53 fs18 fw400">
-              Play games online for free without downloading. Just click the
-              Play button and play instantly in your browser.
+              Play games online for free without <br />
+              downloading. Just click the Play button <br />
+              and play instantly in your browser.
             </p>
           </div>
           <div class="play-image">
-            <img src="./images/rectangle 55.png" alt="" />
-            <img src="./images/rectangle 66.png" alt="" />
+            <img
+              class="card-image-one"
+              src="./images/rectangle 55.png"
+              alt=""
+            />
+            <img
+              class="card-image-two"
+              src="./images/rectangle 66.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
       <!-- games section starts here -->
-      <section>
-        <div class="container">
+      <section class="container">
+        <div class="games-container">
           <div class="games">
             <img src="./images/rectangle 11.png" alt="" />
             <p class="color0b fs20 fw600">Action Games</p>
@@ -111,7 +182,7 @@
             <p class="color0b fs20 fw600">Arcade Games</p>
           </div>
           <div class="games">
-            <img src="./images/rectangle 14.png alt="">
+            <img src="./images/rectangle 14.png" alt="" />
             <p class="color0b fs20 fw600">Educational Games</p>
           </div>
           <div class="games">
@@ -137,32 +208,42 @@
         </div>
       </section>
     </main>
+
     <!-- footer section starts here -->
     <footer>
-        <div class="container">
-            <div>
-                <img src="./images/frame.png" alt="" />
-                <h3 class="fs45 fw700 colorff"><span class="gradient">G</span>amer</h3>
-              </div>            
-              <div class="footer-upper-text">
-                <a href="#" class="colorff fs18 fw600">Our Story</a><a href="#" class="colorff fs18 fw600">Games</a>
-                <a href="#" class="colorff fs18 fw600">Web Games</a><a href="#" class="colorff fs18 fw600">Careers</a>
-                <a href="#" class="colorff fs18 fw600">Support</a><a href="#" class="colorff fs18 fw600">My Account</a>
-              <div class="social-icon">
-                <i class="fa-brands fa-twitter" style="color: #fcfcfd;"></i>
-                <i class="fa-brands fa-apple" style="color: #f1f2f4;"></i>
-                <i class="fa-brands fa-instagram" style="color: #f5f5f5;"></i>
-              </div>
-              <div class="footer-lower-text">
-                <a href="#" class="color60 fs16 fw500">Terms and Conditions</a><a href="#" class="color60 fs16 fw500">Privacy Policy</a>
-                <a href="#" class="color60 fs16 fw500">Cookie Policy</a>
-                <a href="#" class="color60 fs16 fw500">Privacy Setting</a>
-            </div>
-             
-                  <div class="copyright" class="color60 fs16 fw500">
-            <p>Play Games @ Gamer @ 2000-2023 Gamer Bangladesh</p>
-              </div>
+      <div class="container">
+        <div class="foot-logo">
+          <img src="./images/frame.png" alt="" />
+          <span class="fs45 fw700 colorff">
+            <span class="gradient">G</span>amer
+          </span>
         </div>
+        <div class="footer-upper-text">
+          <a href="#" class="colorff fs18 fw600">Our Story</a
+          ><a href="#" class="colorff fs18 fw600">Games</a>
+          <a href="#" class="colorff fs18 fw600">Web Games</a
+          ><a href="#" class="colorff fs18 fw600">Careers</a>
+          <a href="#" class="colorff fs18 fw600">Support</a
+          ><a href="#" class="colorff fs18 fw600">My Account</a>
+        </div>
+        <div class="social-icon">
+          <i class="fa-brands fa-twitter" style="color: #fcfcfd"></i>
+          <i class="fa-brands fa-apple" style="color: #f1f2f4"></i>
+          <i class="fa-brands fa-instagram" style="color: #f5f5f5"></i>
+        </div>
+        <div class="footer-lower-text">
+          <a href="#" class="color60 fs16 fw500">Terms and Conditions</a
+          ><a href="#" class="color60 fs16 fw500">Privacy Policy</a>
+          <a href="#" class="color60 fs16 fw500">Cookie Policy</a>
+          <a href="#" class="color60 fs16 fw500">Privacy Setting</a>
+        </div>
+
+        <div>
+          <p class="copyright color60 fs16 fw500">
+            Play Games @ Gamer @ 2000-2023 Gamer Bangladesh
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
