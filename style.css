@@ -361,4 +361,7 @@ footer img {
     flex-wrap: wrap;
     align-items: center;
   }
+  .cursor {
+    cursor: pointer;
+  }
 }
